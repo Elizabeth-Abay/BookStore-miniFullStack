@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<!-- <div id="operations-div">
+    <button id="about"><i class="fa-solid fa-circle-info"></i></button>
+    <button id="edit"><i class="fa-solid fa-pen"></i></button>
+    <button id="delete"><i class="fa-solid fa-trash"></i></button>
+</div>  this will be sthg added every time to the table-->
+
+<body>
+    <div id="container">
+
+        <!-- page one -->
+        <div id = "book-and-card-page">
+            <div id="table-card">
+                <div id="normal-div">
+                    <button id = "table">Table</button>
+                    <button id = "card">Card</button>
+                </div>
+            </div>
+
+
+            <div id="name-and-plus-btn">
+                <h1>Book List</h1>
+                <button id ="plus-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+
+
+            <div id="Book-actual-info">
+                <!-- is a collection of columns who grow downward -->
+                
+                <div id = "added-to-table-col-name" class = "columns">
+                    <div id="num" class="to-be-bordered">No</div>
+                </div>
+
+                <div id="added-to-column-title" class = "columns">
+                    <div id="title" class="to-be-bordered">Title</div>
+                    
+                </div>
+
+                <div id="added-to-column-author" class = "columns">
+                    <div id="author" class="to-be-bordered">Author</div>
+                    
+                </div>
+
+                <div id="added-to-column-publish-year" class = "columns">
+                    <div id="publish-yr" class="to-be-bordered">Publish Year</div>
+                
+                </div>
+
+                <div id="added-to-column-operations" class = "columns">
+                    <div class= "to-be-bordered">Operation</div>
+                </div>
+            
+            </div>
+        </div>
+
+        <!-- page two -->
+        <div id = "form-page">
+            <button id = "back-btn"><i class="fa-solid fa-long-arrow-left"></i></button>
+            <h1>Create Book</h1>
+
+            <form id = "form-to-create-book">
+                <label>
+                    Title
+                    <input name = "title" type = "text" placeholder="Romeo and Juliet">
+                </label>
+
+                <label>
+                    Author
+                    <input name = "author" type = "text" placeholder="William Shakespeare">
+                </label>
+
+                <label>
+                    Published Year
+                    <input name = "publishedYr" type = "text" placeholder="1597">
+                </label>
+
+                <button id = "save-btn" type = "submit">Save</button>
+            </form>
+        </div>
+    
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+What I learnt
+
+u need dotenv installed and say dotenv.config() to connect and find the env variables
+
+when u connect with a database mongoose.connect(db_url) returns a promise
+Then u use that promise and .then and .catch so that u can see errors and success messages clearly
+
+And when u send sthg in the dynamic route ie 
+app.get('/Books/:id')
+to get id u use req.params property it is not a method
+
+And find will return an id if u want to have a single document returned 
+u use findOne({ _id : id}) or findById(id)
+
+
+And in mongoose u dont say delete({}) u say deleteOne()
+
+And find always returns an array no matter what like u have a single user or lots of users
+
+When an error happens u need to show an error happened by sending a status and message to the frontend
+
+
+About catch-all / fallback middleware
+It is a post middleware and catches requests that didnt match any routes
+
+Position matters for middlewares
+so the fallback-middleware shld be at the end to avoid other routes requests accidentally going to this route
+
+In express the pre and post middlewares are identified based on their Position
+
+Object Id in mongoose is its own type wooooww i was just doing the search using strings
+
+So u need to create a new id object properly and compare it with the id bc id is not a string like in prisma
+new mongoose.Types.ObjectId(string)
+
+A good practice to carry on doing even afterwards is be sure to send status to the user after failing to do something
+
+And FormData u need name to use that
+And then Object.fromEntries(FormData.entries())
