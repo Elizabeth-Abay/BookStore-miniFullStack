@@ -11,18 +11,39 @@
 body{
     width : 100%;
     height : 100vh;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
+#common-part{
+    /* position: absolute; */
+    width : 100%;
+    height : 140px;
+    margin-top : 10px;
+    /* border : solid 1px blue; */
+
+
+}
 
 #container{
-    width : 90%;
+    width : 100%;
     height : 100vh;
     margin-left: 20px;
     margin-right : 20px;
     /* border : solid black 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+#book-and-card-page{
+    display: none;
+    border : 1px solid black;
+    height : 100%;
+    width: 100%;
 }
 
 
@@ -34,7 +55,7 @@ body{
     justify-content: center;
 }
 
-#table , #card{
+#table-btn , #card-btn{
     height : 60px;
     width: 100px;
     border-radius: 11px;
@@ -98,9 +119,18 @@ body{
 
 
 #form-to-update-page , #form-page{
-    display: none;
+    width : 80%;
+    height : 80%;
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+
+   
 }
 
+#form-to-create-book{
+    width : 90%;
+}
 
 #back-btn , #back-btn-update-page{
     width : 60px;
@@ -122,7 +152,7 @@ input{
     margin: 10px 10px;
     display: block;
     height : 50px;
-    width : 100%;
+    width : 90%;
 }
 
 #save-btn , #update-btn{
@@ -132,9 +162,30 @@ input{
     background-color: rgb(85, 201, 18);
 }
 
- #update-btn{
+#update-btn{
     background-color: rgb(11, 175, 162);
- }
+}
+
+
+#card-page{
+    overflow-y : scroll;
+    overflow-x: hidden;
+    display: grid;
+    /* bc it will have the card info in kind of like a table thing */
+    width: 100%;
+    height : 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 25px;
+
+}
+
+.book-info-grid{
+    /* display: none; */
+    height : 500px;
+    border : solid 1px black;
+    border-radius: 20px;
+}
 
 
 @media (max-width : 1000px) {

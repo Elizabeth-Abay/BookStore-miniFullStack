@@ -7,6 +7,7 @@
     <title>Book Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 
@@ -18,25 +19,27 @@
 </div>  this will be sthg added every time to the table-->
 
 <body>
-    <div id="container">
 
+    <!-- this part is common for the book and card page -->
+    <div id = "common-part">
+        <div id="table-card">
+            <div id="normal-div">
+                <button id = "table-btn">Table</button>
+                <button id = "card-btn">Card</button>
+            </div>
+        </div>
+
+
+        <div id="name-and-plus-btn">
+            <h1>Book List</h1>
+            <button id ="plus-btn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        
+    </div>
+
+    <div id="container">
         <!-- page one -->
         <div id = "book-and-card-page">
-            <div id="table-card">
-                <div id="normal-div">
-                    <button id = "table">Table</button>
-                    <button id = "card">Card</button>
-                </div>
-            </div>
-
-
-            <div id="name-and-plus-btn">
-                <h1>Book List</h1>
-                <button id ="plus-btn"><i class="fa-solid fa-plus"></i></button>
-            </div>
-
-
-
             <div id="Book-actual-info">
                 <!-- is a collection of columns who grow downward -->
                 
@@ -126,6 +129,17 @@
 
         <!-- page 4 -->
         <!-- this is activated when u click the card btn -->
+        <div id="card-page"> 
+            <!-- card page is where we display all the changes  -->
+            <!-- its display will be grid -->
+            <!-- the backend will send json and ur frontend will create the divs -->
+            <div class = "book-info-grid">
+                <!-- this is where the cards abt the books will be stored -->
+                
+            </div>
+                        
+
+        </div>
     </div>
 </body>
 
